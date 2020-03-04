@@ -7,7 +7,6 @@ package servlets;
  */
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -104,11 +103,14 @@ public class NoteServlet extends HttpServlet {
                     Note note =ns.get(Integer.parseInt(selectedNote));
                     System.out.println("note");
                     request.setAttribute("note", note);
+                    System.out.println("note setted.......");
                     break;
                 case "add":
                     ns.insert(contents, title);
                     break;
                 case "save":
+//                    selectedNote = request.getParameter("selectedNote");
+                    System.out.println("-----------save----------");
                     System.out.println(title);
                     System.out.println(contents);
                     System.out.println(noteid );
