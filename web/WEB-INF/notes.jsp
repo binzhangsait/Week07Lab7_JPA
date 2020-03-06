@@ -55,8 +55,6 @@ Author     : 798419
                 </c:forEach>
             </table>
 
-
-
             <c:if test="${note == null}">
                 <h2>Edit Note</h2>
                 <form action="notes" method="POST">
