@@ -68,29 +68,6 @@ Author     : 798419
                 </form>
             </c:if>
 
-
-
-            <%--  
-            <c:if test="${note != null}">
-                <h1>Edit Note</h1>
-                <form action="notes" method="post">
-                    <input class="form-control" type="text" name="title" value="${note.title}">
-                    <input type="hidden" name="noteid" value="${note.noteid}"><br>
-                    <input type="hidden" name="notedatecreated" value="${note.datecreated}">
-                    <textarea class="form-control" name="contents" rows="3">${note.contents}</textarea><br>
-                    <input type="hidden" name="action" value="save">
-                    <input class="form-control bg-success text-white font-weight-bold" type="submit" value="Save11">
-                </form>
-                <!--delete should be separated!!!-->
-                <form action="notes" method="post">
-                    <input class="form-control bg-danger text-white font-weight-bold" type="submit" value="Delete">
-                    <input type="hidden" name="action" value="delete">
-                    <input type="hidden" name="selectedNote" value="${note.noteid}"><br>
-                </form >
-            </c:if>
-            --%>
-
-
             <c:if test="${note != null}">
                 <h2>Edit Note</h2>
                 <form action="notes" method="POST">
@@ -110,7 +87,6 @@ Author     : 798419
                     <input type="hidden" name="selectedNote" value="${note.noteid}">
                 </form>
             </c:if>
-
 
         </div>
     </body>

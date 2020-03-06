@@ -1,10 +1,5 @@
 package servlets;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -63,7 +58,7 @@ public class NoteServlet extends HttpServlet {
         List<Note> notes = null;
         try {
             System.out.println("notes loading .........................");
-            notes = (List<Note>) ns.getAll();//?????????
+            notes = (List<Note>) ns.getAll();
 
             System.out.println("notes loaded .........................");
         } catch (Exception ex) {
@@ -109,8 +104,6 @@ public class NoteServlet extends HttpServlet {
                     ns.insert(contents, title);
                     break;
                 case "save":
-//                    selectedNote = request.getParameter("selectedNote");
-                    System.out.println("-----------save----------");
                     System.out.println(title);
                     System.out.println(contents);
                     System.out.println(noteid );
